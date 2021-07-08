@@ -28,7 +28,7 @@ app.use("/api", routes);
 app.use("/", htmlRoutes);
 
 // connect to Mongo database with Mongoose
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
